@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Floor Vibration Analysis Support</title>
+  <meta name="description" content="Floor Vibration Analysis app support page with contact details, troubleshooting, and report export help.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <span class="eyebrow">App Support</span>
+      <h1>Floor Vibration Analysis Support</h1>
+      <p>
+        Need help with measurement setup, data export, PDF reports, or App Store questions?
+        This page provides a quick support contact channel and the most common troubleshooting steps
+        for the Floor Vibration Analysis app.
+      </p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Contact Support</h2>
+        <p>Support email: <a href="mailto:support@example.com">support@example.com</a></p>
+        <p>Response target: within 3 business days</p>
+        <p class="muted">Please replace the email address above with your real support inbox before publishing.</p>
+      </article>
+      <article class="card">
+        <h2>App Version</h2>
+        <p>Current release: <strong>1.0</strong></p>
+        <p>Platform: <strong>iPhone</strong></p>
+        <p>Primary use: floor vibration measurement, spectrum review, and PDF report export</p>
+      </article>
+      <article class="card">
+        <h2>Best Way To Report An Issue</h2>
+        <p>
+          Include your iPhone model, iOS version, app version, selected sample rate, measurement duration,
+          sensor source, and a short description of what you expected versus what happened.
+        </p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Common Questions</h2>
+
+      <h3>Why does low-frequency data look unstable?</h3>
+      <p>
+        Smartphone MEMS sensors are limited at low frequencies. In this app, results above roughly
+        <code>5 Hz</code> are generally more reliable, while <code>1–5 Hz</code> should be treated as trend reference only.
+      </p>
+
+      <h3>Why do I need countdown and fixed-duration measurement?</h3>
+      <p>
+        The app waits before recording to reduce tap-induced vibration. Fixed durations also improve repeatability
+        and make PSD comparisons more consistent.
+      </p>
+
+      <h3>Why does PDF export take time?</h3>
+      <p>
+        The report is generated on-device and includes multiple rendered charts. Longer measurements and more data
+        points can increase processing time.
+      </p>
+
+      <h3>Why does static calibration not remove all noise?</h3>
+      <p>
+        Static calibration removes offset, but it does not eliminate random sensor noise or low-frequency drift.
+        For better results, use rigid mounting, longer measurement windows, and repeated tests.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Troubleshooting Checklist</h2>
+      <ul>
+        <li>Place the iPhone on a rigid, stable surface and avoid holding it by hand.</li>
+        <li>Use a longer duration such as <code>60 s</code> or <code>120 s</code> if low-frequency stability matters.</li>
+        <li>Run static calibration before measurement if the baseline appears shifted.</li>
+        <li>Start a new measurement after changing analysis low-pass settings.</li>
+        <li>Keep the device awake and avoid incoming interruptions during recording.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Support Policy</h2>
+      <p>
+        The app is intended for engineering screening, trend comparison, and report generation on mobile devices.
+        It is not a substitute for certified professional vibration instrumentation.
+      </p>
+      <p>
+        For business inquiries, custom deployment, or enterprise use, contact
+        <a href="mailto:business@example.com">business@example.com</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Your Company Name. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
